@@ -1,79 +1,178 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+<h1 align="center"><b>🌙 Easy Sleep</b></h1>
 
-# Getting Started
+<p align="center">
+<b>Easy Sleep</b> is a high-performance Android application designed for
+<b>brainwave entrainment and deep relaxation</b>.
+</p>
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+<p align="center">
+Unlike traditional sleep apps that rely on MP3 playback, Easy Sleep uses a
+<b>custom native audio engine</b> to synthesize pure frequencies and binaural beats in real-time,
+ensuring zero-latency, scientific precision, and minimal memory usage.
+</p>
 
-## Step 1: Start the Metro Server
+<hr>
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+<h2><b>🚀 Key Features</b></h2>
 
-To start Metro, run the following command from the _root_ of your React Native project:
+<h3><b>🎵 Real-Time Audio Synthesis</b></h3>
+<p>
+No audio files. No loops.  
+All tones are dynamically generated using native Kotlin for precision and performance.
+</p>
 
-```bash
-# using npm
-npm start
+<h3><b>📱 Swipe-Based UX</b></h3>
+<p>
+Minimalist, distraction-free interface built with <code>react-native-pager-view</code>,
+optimized for low-light environments.
+</p>
 
-# OR using Yarn
-yarn start
-```
+<h3><b>⚡ Optimized Performance</b></h3>
+<ul>
+<li>Reduced APK size from <b>117MB → 46MB</b></li>
+<li>R8 Minification enabled</li>
+<li>Resource Shrinking enabled</li>
+<li>Optimized JavaScriptCore engine</li>
+</ul>
 
-## Step 2: Start your Application
+<h3><b>⏳ Background Playback & Timer</b></h3>
+<ul>
+<li>Full background audio support</li>
+<li>Auto-stop timer (30m, 60m, 8h)</li>
+</ul>
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+<h3><b>🎨 Adaptive Branding</b></h3>
+<p>
+Full support for Android Adaptive Icons (v26+) for a premium native appearance.
+</p>
 
-### For Android
+<hr>
 
-```bash
-# using npm
-npm run android
+<h2><b>🔬 The Science of Sound</b></h2>
 
-# OR using Yarn
-yarn android
-```
+<table>
+<tr>
+<th>Mode</th>
+<th>Frequency</th>
+<th>Description</th>
+<th>Scientific Benefit</th>
+</tr>
 
-### For iOS
+<tr>
+<td>🌙 Lucid Dream</td>
+<td>200Hz + 6Hz</td>
+<td>Theta Binaural Beats</td>
+<td>Facilitates REM sleep & creative visualization</td>
+</tr>
 
-```bash
-# using npm
-npm run ios
+<tr>
+<td>😴 Deep Sleep</td>
+<td>200Hz / 100Hz</td>
+<td>Low-Frequency Drone</td>
+<td>Creates stable auditory masking for deep rest</td>
+</tr>
 
-# OR using Yarn
-yarn ios
-```
+<tr>
+<td>💚 Healing</td>
+<td>432Hz</td>
+<td>Harmonic Sine Wave</td>
+<td>Associated with relaxation & heart-rate calming</td>
+</tr>
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+<tr>
+<td>🧘 Meditation</td>
+<td>528Hz</td>
+<td>Solfeggio Tone</td>
+<td>Linked to emotional balance & stress reduction</td>
+</tr>
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+</table>
 
-## Step 3: Modifying your App
+<hr>
 
-Now that you have successfully run the app, let's modify it.
+<h2 align="center"><b>📸 Screenshots</b></h2>
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7cfd3798-3ab6-4551-87d4-11872a32cc7f" width="220"/>
+  <img src="https://github.com/user-attachments/assets/c8ce596e-e9dc-4714-be02-3ac589e04db4" width="220"/>
+  <img src="https://github.com/user-attachments/assets/d354366f-35da-4652-bee1-d74117ebefa7" width="220"/>
+  <img src="https://github.com/user-attachments/assets/2a1e1cc6-92f3-4982-93f0-1ab497d07e0c" width="220"/>
+</p>
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+<hr>
 
-## Congratulations! :tada:
+<h2><b>🛠 Technical Architecture</b></h2>
 
-You've successfully run and modified your React Native App. :partying_face:
+<h3><b>Core Stack</b></h3>
+<ul>
+<li><b>Frontend:</b> React Native (TypeScript)</li>
+<li><b>Audio Engine:</b> Native Kotlin (Android)</li>
+<li><b>Navigation:</b> react-native-pager-view</li>
+<li><b>Build System:</b> Gradle (R8 + ProGuard enabled)</li>
+</ul>
 
-### Now what?
+<hr>
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+<h2><b>🔊 Native Audio Engine</b></h2>
 
-# Troubleshooting
+<p>
+To eliminate large audio assets, a custom <code>AudioEngine.kt</code> was implemented
+using <code>android.media.AudioTrack</code>.
+</p>
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+<pre><code>
+// Real-time sine wave generation
+val sineL = sin(phaseL) * finalVol
+val sineR = if (isBinaural) sin(phaseR) * finalVol else sineL
 
-# Learn More
+// Phase increment calculation
+phaseL += 2 * PI * leftFreq / sampleRate
+</code></pre>
 
-To learn more about React Native, take a look at the following resources:
+<p>
+This enables continuous waveform synthesis, precise binaural beats,
+minimal memory usage, and high-fidelity output.
+</p>
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+<hr>
+
+<h2><b>📦 APK Size Optimization</b></h2>
+
+<ul>
+<li>✔ R8 Minification</li>
+<li>✔ Resource Shrinking</li>
+<li>✔ JavaScriptCore Optimization</li>
+<li>✔ Dead Code Elimination</li>
+</ul>
+
+<hr>
+
+<h2><b>🛠 Installation & Build</b></h2>
+
+<h3>1️⃣ Clone Repository</h3>
+
+<pre><code>
+git clone https://github.com/your-username/easy-sleep.git
+</code></pre>
+
+<h3>2️⃣ Install Dependencies</h3>
+
+<pre><code>
+npm install
+</code></pre>
+
+<h3>3️⃣ Generate Release APK</h3>
+
+<pre><code>
+cd android
+./gradlew assembleRelease
+</code></pre>
+
+<hr>
+
+<h2><b>🛡 License</b></h2>
+
+<p>
+Distributed under the <b>Apache License</b>.  
+See the LICENSE file for more information.
+</p>
